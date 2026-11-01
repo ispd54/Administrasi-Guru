@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Negeri 3 Keramas - Mewujudkan Generasi Unggul & Berkarakter</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',
+                            blue: '#1e3a8a',
+                            lightBlue: '#3b82f6',
+                            emerald: '#059669',
+                            gold: '#f59e0b',
+                            amber: '#d97706',
+                            cream: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-gold selection:text-slate-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-brand-gold"></i> <b class="font-normal" data-k="telepon">082322669074</b></span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-brand-gold"></i> <b class="font-normal" data-k="email">Sdtigakeramas@yahoo.co.id</b></span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-brand-gold"></i> <b class="font-normal" data-k="jam">Senin - Jumat: 07.00 - 15.30 WIB</b></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-brand-emerald text-white text-xs px-2 py-0.5 rounded-full font-medium" data-k="spmb_badge">SPMB 2026/2027</span>
+                <div class="flex items-center gap-2.5 text-slate-300 ml-2">
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-brand-gold transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-emerald flex items-center justify-center text-white font-heading font-extrabold text-2xl shadow-md group-hover:scale-105 transition transform">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="block font-heading font-extrabold text-xl text-brand-navy leading-none tracking-tight">SDN 3 Keramas</span>
+                        <span class="text-xs font-medium text-slate-500 tracking-wider">CERDAS • BERKARAKTER • BERBUDAYA</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium text-sm text-slate-700">
+                    <a href="#beranda" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Beranda</a>
+                    <a href="#profil" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Profil</a>
+                    <a href="#jurusan" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Program Unggulan</a>
+                    <a href="#berita" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Berita & Pengumuman</a>
+                    <a href="#galeri" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Galeri</a>
+                    <a href="#spmb" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">SPMB</a>
+                    <a href="#kontak" class="hover:text-brand-blue transition py-1 border-b-2 border-transparent hover:border-brand-blue">Kontak</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="app.html" class="bg-gradient-to-r from-brand-amber to-brand-gold hover:from-amber-600 hover:to-amber-500 text-white font-semibold text-sm px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Beranda</a>
+            <a href="#profil" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Profil</a>
+            <a href="#jurusan" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Program Unggulan</a>
+            <a href="#berita" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Berita & Pengumuman</a>
+            <a href="#galeri" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Galeri</a>
+            <a href="#spmb" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">SPMB Info</a>
+            <a href="#kontak" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Kontak</a>
+            <div class="pt-2">
+                <a href="app.html" class="block w-full bg-brand-gold text-white font-semibold px-4 py-2.5 rounded-xl shadow text-center">
+                    <i class="fa-solid fa-right-to-bracket mr-2"></i> Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="beranda" class="relative bg-brand-navy text-white overflow-hidden min-h-[600px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop" alt="Gedung Sekolah" data-img="hero" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 gradient-overlay hero-pattern"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full text-brand-gold text-xs sm:text-sm font-semibold mb-6 border border-white/15">
+                    <i class="fa-solid fa-award"></i> <span data-k="akreditasi_ket">Terakreditasi B</span> &middot; TA <span data-k="tahun_ajaran">2026/2027</span>
+                </div>
+                <h1 data-k="hero_judul" class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                    Mewujudkan Generasi Cerdas, Berkarakter & Cinta Budaya
+                </h1>
+                <p data-k="hero_teks" class="text-base sm:text-lg text-slate-200 mb-8 leading-relaxed font-light">
+                    SD Negeri 3 Keramas berkomitmen memberikan pendidikan berkualitas tinggi, memadukan ilmu pengetahuan, nilai moral, dan kearifan budaya Bali.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="openSpmbModal()" class="bg-gradient-to-r from-brand-amber to-brand-gold hover:from-amber-600 hover:to-amber-500 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        Pendaftaran SPMB 2026 <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <a href="#profil" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-7 py-3.5 rounded-full backdrop-blur-md transition">
+                        Jelajahi Profil <i class="fa-solid fa-compass ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Counter -->
+    <section class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12">
+        <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 border border-slate-100">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_siswa">200+</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Siswa Aktif</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-brand-emerald flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_guru">15+</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Guru & Tenaga Kependidikan</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-amber-50 text-brand-amber flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_rombel">6</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Rombongan Belajar</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                    <div class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900" data-k="stat_akreditasi">B</div>
+                    <div class="text-xs sm:text-sm text-slate-500 font-medium">Akreditasi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principal Welcome & Profile Section -->
+    <section id="profil" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Principal Photo & Speech -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-brand-blue to-brand-emerald rounded-3xl opacity-30 blur-lg"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Kepala Sekolah" data-img="kepala_foto" class="w-full h-96 object-cover rounded-2xl">
+                            <div class="p-4 text-center">
+                                <h3 class="font-heading font-bold text-xl text-slate-900" data-k="kepala">Kadek Marisa Rosalia, S.Pd.SD.</h3>
+                                <p class="text-brand-emerald font-medium text-sm">Kepala Sekolah SD Negeri 3 Keramas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speech Content & Vision Mission -->
+                <div class="lg:col-span-7">
+                    <div class="inline-block bg-blue-100 text-brand-blue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                        Sambutan Kepala Sekolah
+                    </div>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        Selamat Datang di Website Resmi SD Negeri 3 Keramas
+                    </h2>
+                    <p data-k="sambutan" class="text-slate-600 leading-relaxed mb-6">
+                        "Pendidikan bukan sekadar transfer ilmu, melainkan proses membentuk karakter, mengasah kreativitas, dan membangun fondasi kesuksesan masa depan anak bangsa. Di SDN 3 Keramas, kami berkomitmen menyediakan lingkungan belajar yang aman, ramah, dan menyenangkan bagi setiap anak."
+                    </p>
+
+                    <!-- Vision & Mission Accordion/Tabs -->
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-brand-emerald flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <h4 class="font-heading font-bold text-lg text-slate-900">Visi Sekolah</h4>
+                            </div>
+                            <p data-k="visi" class="text-slate-600 text-sm leading-relaxed pl-11">
+                                Terwujudnya peserta didik yang beriman, berakhlak mulia, cerdas, mandiri, berprestasi, dan berbudaya.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand-blue flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <h4 class="font-heading font-bold text-lg text-slate-900">Misi Utama</h4>
+                            </div>
+                            <ul data-list="misi" class="text-slate-600 text-sm space-y-2 pl-11 list-disc">
+                                <li>Menyelenggarakan pembelajaran Kurikulum Merdeka yang aktif dan menyenangkan.</li>
+                                <li>Mengembangkan potensi minat bakat siswa melalui program ekstrakurikuler komprehensif.</li>
+                                <li>Membangun karakter religius, berintegritas, dan bertoleransi tinggi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Majors Section -->
+    <section id="jurusan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-emerald-100 text-brand-emerald text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                    Pilihan Akademik
+                </div>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Program Unggulan
+                </h2>
+                <p class="text-slate-600">
+                    Pembelajaran Kurikulum Merdeka yang menyenangkan untuk membangun fondasi belajar siswa.
+                </p>
+            </div>
+
+            <div id="programGrid" class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1"><div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-book-open"></i></div><h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Literasi & Numerasi</h3><p class="text-slate-600 text-sm mb-6 leading-relaxed">Gerakan membaca, pojok baca kelas, dan pembelajaran berhitung yang kontekstual.</p><div class="space-y-2 text-xs font-semibold text-slate-700"><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Gerakan Literasi Sekolah</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Pojok Baca Kelas</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Pembelajaran Berhitung Menyenangkan</div></div></div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1"><div class="w-16 h-16 rounded-2xl bg-brand-emerald text-white flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-palette"></i></div><h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Ekstrakurikuler</h3><p class="text-slate-600 text-sm mb-6 leading-relaxed">Tari, Bulu Tangkis, Catur dan Menggambar/Mewarnai untuk mengembangkan minat dan bakat siswa.</p><div class="space-y-2 text-xs font-semibold text-slate-700"><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Tari Bali</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Bulu Tangkis & Catur</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Menggambar/Mewarnai</div></div></div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1"><div class="w-16 h-16 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid fa-people-group"></i></div><h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">Karakter & Pramuka</h3><p class="text-slate-600 text-sm mb-6 leading-relaxed">Penguatan Profil Pelajar Pancasila, Pramuka, dan sekolah ramah lingkungan.</p><div class="space-y-2 text-xs font-semibold text-slate-700"><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Pramuka</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Penguatan Karakter</div><div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> Sekolah Ramah Lingkungan</div></div></div>
+                </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements Section -->
+    <section id="berita" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-10">
+                <!-- Latest News Column -->
+                <div class="lg:col-span-8">
+                    <div class="flex justify-between items-end mb-8">
+                        <div>
+                            <span class="text-brand-blue font-bold text-xs uppercase tracking-wider">Informasi Terkini</span>
+                            <h2 class="font-heading text-3xl font-extrabold text-slate-900">Berita & Kegiatan</h2>
+                        </div>
+                        <a href="#" class="text-brand-blue font-semibold text-sm hover:underline flex items-center gap-1">Lihat Semua <i class="fa-solid fa-chevron-right text-xs"></i></a>
+                    </div>
+
+                    <div id="newsGrid" class="grid sm:grid-cols-2 gap-6">
+                        <div class="sm:col-span-2 bg-white rounded-2xl border border-slate-200 p-8 text-center text-slate-500 text-sm">Belum ada berita. Berita terbaru akan tampil di sini.</div>
+                    </div>
+                </div>
+
+                <!-- Announcement Sidebar Board -->
+                <div class="lg:col-span-4">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-amber flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-slate-900">Papan Pengumuman</h3>
+                                <p class="text-xs text-slate-500">Informasi penting resmi sekolah</p>
+                            </div>
+                        </div>
+
+                        <div id="annList" class="space-y-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 text-sm text-slate-500">Belum ada pengumuman.</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Facilities Section -->
+    <section id="galeri" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-block bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
+                    Dokumentasi
+                </div>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                    Galeri Sekolah
+                </h2>
+                <p class="text-slate-600">
+                    Potret kegiatan, fasilitas, dan prestasi siswa SD Negeri 3 Keramas.
+                </p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex justify-center flex-wrap gap-2 mb-10">
+                <button onclick="filterGallery('all')" class="gallery-btn bg-brand-blue text-white px-5 py-2 rounded-full text-sm font-medium shadow-sm transition">Semua</button>
+                <button onclick="filterGallery('fasilitas')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Fasilitas</button>
+                <button onclick="filterGallery('kegiatan')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Kegiatan</button>
+                <button onclick="filterGallery('prestasi')" class="gallery-btn bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2 rounded-full text-sm font-medium transition">Prestasi</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+                <div class="col-span-full text-center text-slate-500 text-sm py-10">Memuat galeri...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPMB Section -->
+    <section id="spmb" class="py-20 bg-gradient-to-br from-brand-navy via-slate-900 to-brand-blue text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="bg-brand-gold text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Sistem Penerimaan Murid Baru</span>
+                    <h2 class="font-heading text-3xl sm:text-5xl font-extrabold mt-4 mb-6 leading-tight">Bergabunglah Bersama Keluarga Besar SDN 3 Keramas</h2>
+                    <p data-k="spmb_info" class="text-slate-300 mb-8 leading-relaxed">Pendaftaran SPMB Tahun Ajaran 2026/2027. Isi formulir dan unggah dokumen persyaratan secara daring.</p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">1</div>
+                            <div><h4 class="font-bold text-white">Isi Formulir Online</h4><p class="text-xs text-slate-400">Lengkapi data calon murid dan unggah Kartu Keluarga, Akta Kelahiran, serta Ijazah TK/PAUD (jika ada).</p></div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">2</div>
+                            <div><h4 class="font-bold text-white">Verifikasi Berkas</h4><p class="text-xs text-slate-400">Panitia memeriksa kelengkapan dan keabsahan data yang dikirim.</p></div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-8 h-8 rounded-full bg-brand-gold text-slate-900 font-bold flex items-center justify-center shrink-0">3</div>
+                            <div><h4 class="font-bold text-white">Pengumuman & Daftar Ulang</h4><p class="text-xs text-slate-400">Hasil seleksi diumumkan sesuai jadwal dan dilanjutkan daftar ulang.</p></div>
+                        </div>
+                        </div>
+                    <button onclick="openSpmbModal()" class="bg-brand-gold hover:bg-amber-500 text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> Isi Formulir SPMB Sekarang
+                    </button>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                    <h3 class="font-heading font-bold text-2xl text-white mb-6 flex items-center gap-3"><i class="fa-solid fa-calendar-days text-brand-gold"></i> Jadwal SPMB</h3>
+                    <div id="spmbJadwal" class="space-y-4 text-sm">
+                        <div class="flex justify-between pb-3 border-b border-white/10"><span class="text-slate-300">Jadwal belum diumumkan</span><span class="font-bold text-brand-gold">-</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="kontak" class="py-20 bg-slate-900 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 mb-16">
+                
+                <!-- School Info Column -->
+                <div class="lg:col-span-4">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white font-heading font-bold text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="font-heading font-extrabold text-xl text-white">SDN 3 Keramas</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Sekolah dasar negeri di Desa Keramas, Blahbatuh, Gianyar yang berkomitmen mencetak generasi cerdas, berkarakter, dan berbudaya.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-brand-blue hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#profil" class="hover:text-brand-gold transition">Profil Sekolah</a></li>
+                        <li><a href="#jurusan" class="hover:text-brand-gold transition">Program Unggulan</a></li>
+                        <li><a href="#berita" class="hover:text-brand-gold transition">Berita & Artikel</a></li>
+                        <li><a href="#galeri" class="hover:text-brand-gold transition">Galeri Fasilitas</a></li>
+                        <li><a href="#spmb" class="hover:text-brand-gold transition">Info SPMB</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold mt-1"></i>
+                            <span data-k="alamat">Br.Lebah, Desa Keramas, Kecamatan Blahbatuh, Kabupaten Gianyar, 80581</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <span data-k="telepon">082322669074</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-gold"></i>
+                            <span data-k="email">sdtigakeramas@yahoo.co.id</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Embedded Map / Office Hours -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Lokasi Sekolah</h4>
+                    <div class="rounded-xl overflow-hidden h-40 bg-slate-800 relative">
+                        <!-- Mock Map Graphic -->
+                        <iframe data-maps src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.576386552303!2d115.33041252253953!3d-8.574623138658902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1793360793068!5m2!1sen!2sid" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; 2026 SD Negeri 3 Keramas. Hak Cipta Dilindungi Undang-Undang. &middot; <a href="app.html" class="hover:text-brand-gold">Login</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal SPMB -->
+    <div id="spmbModal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeSpmbModal()" class="absolute top-5 right-5 w-9 h-9 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-200 transition"><i class="fa-solid fa-xmark"></i></button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-amber-100 text-brand-amber rounded-2xl flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-paper-plane"></i></div>
+                <h3 class="font-heading font-extrabold text-2xl text-slate-900">Formulir Pendaftaran SPMB</h3>
+                <p class="text-xs text-slate-500">Isi data calon murid baru dengan benar sesuai dokumen resmi</p>
+            </div>
+            <form id="spmbForm" onsubmit="handleSpmbSubmit(event)" class="space-y-4 text-sm">
+                <div><label class="block font-semibold text-slate-700 mb-1">Nama Lengkap Calon Murid</label><input name="nama" required placeholder="Sesuai Akta Kelahiran" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div><label class="block font-semibold text-slate-700 mb-1">NIK</label><input name="nik" required inputmode="numeric" maxlength="16" pattern="[0-9]{16}" placeholder="16 digit NIK" title="NIK harus 16 digit angka" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div><div><label class="block font-semibold text-slate-700 mb-1">Jenis Kelamin</label><select name="jk" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"><option value="">Pilih...</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div><label class="block font-semibold text-slate-700 mb-1">Agama</label><select name="agama" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"><option value="">Pilih...</option><option>Hindu</option><option>Islam</option><option>Kristen</option><option>Katolik</option><option>Buddha</option><option>Konghucu</option></select></div><div><label class="block font-semibold text-slate-700 mb-1">Tempat Lahir</label><input name="tempat_lahir" required  class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div>
+                </div>
+                <div><label class="block font-semibold text-slate-700 mb-1">Tanggal Lahir</label><input name="tgl_lahir" required type="date" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div>
+                <div><label class="block font-semibold text-slate-700 mb-1">Alamat</label><textarea name="alamat" required rows="2" placeholder="Banjar/Dusun, Desa, Kecamatan, Kabupaten" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></textarea></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div><label class="block font-semibold text-slate-700 mb-1">Nama Orang Tua/Wali</label><input name="ortu" required  class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div><div><label class="block font-semibold text-slate-700 mb-1">No. WhatsApp</label><input name="wa" required type="tel" placeholder="08xxxxxxxxxx" pattern="[0-9+]{9,15}" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div>
+                </div>
+                <div><label class="block font-semibold text-slate-700 mb-1">Asal TK/PAUD <span class="font-normal text-slate-400">(jika ada)</span></label><input name="asal_tk"  placeholder="Nama TK/PAUD" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div><label class="block font-semibold text-slate-700 mb-1">Upload Kartu Keluarga (KK)</label><input type="file" name="kk" required accept=".pdf,.jpg,.jpeg,.png" class="w-full text-xs file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-brand-blue file:font-semibold"><p class="text-[11px] text-slate-400 mt-1">PDF/JPG/PNG, maks. 5 MB</p></div><div><label class="block font-semibold text-slate-700 mb-1">Upload Akta Kelahiran</label><input type="file" name="akta" required accept=".pdf,.jpg,.jpeg,.png" class="w-full text-xs file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-brand-blue file:font-semibold"><p class="text-[11px] text-slate-400 mt-1">PDF/JPG/PNG, maks. 5 MB</p></div>
+                </div>
+                <div><label class="block font-semibold text-slate-700 mb-1">Upload Ijazah TK/PAUD <span class="font-normal text-slate-400">(jika ada)</span></label><input type="file" name="ijazah"  accept=".pdf,.jpg,.jpeg,.png" class="w-full text-xs file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-50 file:text-brand-blue file:font-semibold"><p class="text-[11px] text-slate-400 mt-1">PDF/JPG/PNG, maks. 5 MB</p></div>
+                <div id="spmbMsg" class="hidden text-xs rounded-lg px-3 py-2"></div>
+                <div class="pt-2"><button id="spmbBtn" type="submit" class="w-full bg-brand-gold hover:bg-amber-500 text-slate-900 font-extrabold py-3 rounded-xl shadow-md transition">Kirim Pendaftaran</button></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="max-w-4xl w-full bg-transparent text-center relative" onclick="event.stopPropagation()">
+            <iframe id="lightboxFrame" class="hidden w-full h-[70vh] rounded-xl bg-black" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <img id="lightboxImg" src="" alt="Gallery Preview" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl object-contain">
+            <h4 id="lightboxCaption" class="text-white font-heading font-bold text-xl mt-4"></h4>
+            <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white text-3xl hover:text-brand-gold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking menu links
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // SPMB Modal Logic
+        function openSpmbModal() {
+            document.getElementById('spmbModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSpmbModal() {
+            document.getElementById('spmbModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        
+        // Announcement Modal
+        function openAnnouncementModal(title) {
+            alert('Pengumuman: ' + title + '\n\nSilakan cek lampiran atau hubungi sekretariat sekolah untuk informasi lebih lengkap.');
+        }
+
+        // Lightbox Modal Logic
+        function openLightbox(caption, src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightboxCaption').innerText = caption;
+            document.getElementById('lightboxModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-blue', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('bg-brand-blue', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script>
+    // ===== DATA DINAMIS DARI SUPABASE (kelola lewat app.html > Website) =====
+    const SB=supabase.createClient('https://pysptebwcnwgnzknbvld.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5c3B0ZWJ3Y253Z256a25idmxkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM0OTYzNzAsImV4cCI6MjEwOTA3MjM3MH0.du33KaN-dqFDxjzmtgS80H5uZlN0tm-2tTT1mmn2eSE');
+    const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const dId=u=>((u||'').match(/(?:\/d\/|[?&]id=)([\w-]{15,})/)||[])[1];
+    const tgl=d=>d?new Date(d+'T00:00:00').toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'}):'';
+    const IMG='referrerpolicy="no-referrer" loading="lazy"';
+    const BADGE={Penting:'bg-red-100 text-red-600',Akademik:'bg-blue-100 text-brand-blue',SPMB:'bg-emerald-100 text-brand-emerald',Umum:'bg-slate-200 text-slate-600'};
+    let NEWS=[],ANN=[];
+    function info(t,b,u){let m=document.getElementById('infoModal');if(!m){m=document.createElement('div');m.id='infoModal';m.className='fixed inset-0 z-50 hidden bg-slate-900/70 flex items-center justify-center p-4';m.onclick=()=>m.classList.add('hidden');document.body.appendChild(m)}
+      m.innerHTML=`<div class="bg-white rounded-2xl max-w-2xl w-full p-6 max-h-[85vh] overflow-y-auto" onclick="event.stopPropagation()"><h3 class="font-heading font-bold text-xl mb-3">${esc(t)}</h3><p class="text-slate-600 text-sm whitespace-pre-wrap">${esc(b)}</p>${u?`<a href="${esc(u)}" target="_blank" rel="noopener" class="inline-block mt-4 text-brand-blue font-semibold text-sm"><i class="fa-solid fa-download"></i> Buka lampiran</a>`:''}</div>`;m.classList.remove('hidden')}
+    const openNews=i=>info(NEWS[i].judul,NEWS[i].isi);
+    const openAnn=i=>info(ANN[i].judul,ANN[i].isi,ANN[i].berkas_url);
+    function openLightbox(cap,src,video){const f=document.getElementById('lightboxFrame'),i=document.getElementById('lightboxImg');
+      f.classList.toggle('hidden',!video);i.classList.toggle('hidden',!!video);f.src=video?src:'';i.src=video?'':src;
+      document.getElementById('lightboxCaption').innerText=cap;document.getElementById('lightboxModal').classList.remove('hidden');document.body.style.overflow='hidden'}
+    function closeLightbox(){document.getElementById('lightboxFrame').src='';document.getElementById('lightboxModal').classList.add('hidden');document.body.style.overflow='auto'}
+        // ===== KONFIGURASI GOOGLE DRIVE (Apps Script) =====
+    // Tempel URL Web App dari Apps Script (lihat spmb-drive.gs) di sini:
+    const GAS_URL='https://script.google.com/macros/s/AKfycby6RVIHd9evCSySZ6X8zZ6mYpjq6L5UNtrXXjFb1WMkLYKoqsfsPA6sqo27mxTDkhaK/exec';
+    const MAXF=5*1024*1024;
+    const b64=f=>new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(r.result.split(',')[1]);r.onerror=no;r.readAsDataURL(f)});
+    function spmbMsg(t,ok){const m=document.getElementById('spmbMsg');m.textContent=t;m.className='text-xs rounded-lg px-3 py-2 '+(ok?'bg-emerald-50 text-emerald-700':'bg-red-50 text-red-600')}
+    async function handleSpmbSubmit(e){e.preventDefault();const form=e.target,btn=document.getElementById('spmbBtn');
+      if(!GAS_URL)return spmbMsg('Pendaftaran online belum diaktifkan. Hubungi sekolah.',false);
+      const fd=new FormData(form),data={};['nama','nik','jk','agama','tempat_lahir','tgl_lahir','alamat','ortu','wa','asal_tk'].forEach(k=>data[k]=(fd.get(k)||'').toString().trim());
+      const files={};
+      for(const k of ['kk','akta','ijazah']){const f=fd.get(k);if(f&&f.size){if(f.size>MAXF)return spmbMsg('Ukuran file '+k.toUpperCase()+' melebihi 5 MB.',false);files[k]={name:f.name,type:f.type,data:await b64(f)}}}
+      btn.disabled=true;btn.textContent='Mengirim... mohon tunggu';spmbMsg('Mengunggah berkas, jangan tutup halaman ini.',true);
+      try{const r=await fetch(GAS_URL,{method:'POST',body:JSON.stringify({action:'spmb',data,files})});const j=await r.json();
+        if(!j.ok)throw new Error(j.error||'Gagal');
+        spmbMsg('Terima kasih! Pendaftaran terkirim. Nomor pendaftaran: '+j.no+'. Panitia akan menghubungi melalui WhatsApp.',true);form.reset();
+      }catch(err){spmbMsg('Pendaftaran gagal terkirim: '+err.message,false)}
+      btn.disabled=false;btn.textContent='Kirim Pendaftaran'}
+    // ===== GALERI DARI GOOGLE DRIVE =====
+    (async()=>{if(!GAS_URL)return;try{
+      const j=await (await fetch(GAS_URL+'?action=galeri')).json();if(!j.ok||!j.items.length)return;window.DRIVE_OK=true;
+      document.getElementById('galleryGrid').innerHTML=j.items.map(g=>{const v=g.tipe==='video',th='https://drive.google.com/thumbnail?id='+g.id+'&sz=w800',
+        big=v?'https://drive.google.com/file/d/'+g.id+'/preview':'https://drive.google.com/thumbnail?id='+g.id+'&sz=w1600',
+        act=`openLightbox(${JSON.stringify(g.nama).replace(/"/g,'&quot;')},'${big}',${v})`;
+        return `<div class="gallery-item ${esc((g.kategori||'').toLowerCase())} group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer bg-slate-800" onclick="${act}"><img src="${th}" ${IMG} alt="${esc(g.nama)}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">${v?'<div class="absolute inset-0 flex items-center justify-center"><span class="w-14 h-14 rounded-full bg-black/60 text-white flex items-center justify-center text-xl"><i class="fa-solid fa-play"></i></span></div>':''}<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white"><span class="text-xs text-brand-gold uppercase font-bold">${esc(g.kategori)}</span><h4 class="font-heading font-bold text-lg">${esc(g.nama)}</h4></div></div>`}).join('');
+    }catch(err){console.warn('Galeri Drive gagal:',err.message)}})();
+    // ===== JADWAL SPMB (format config spmb_jadwal: "Kegiatan|Tanggal" per baris) =====
+    function renderJadwal(t){const rows=t.split('\n').map(x=>x.trim()).filter(Boolean);if(!rows.length)return;
+      document.getElementById('spmbJadwal').innerHTML=rows.map((r,i)=>{const[a,b]=r.split('|');return `<div class="flex justify-between gap-4 pb-3 ${i<rows.length-1?'border-b border-white/10':''}"><span class="text-slate-300">${esc(a)}</span><span class="font-bold text-brand-gold text-right">${esc(b||'')}</span></div>`}).join('')}
+    (async()=>{try{
+      const T=(t,o,asc,l)=>{let q=SB.from(t).select('*');if(o)q=q.order(o,{ascending:asc});return l?q.limit(l):q};
+      const[c,pr,br,pg,gl]=await Promise.all([T('web_config'),T('web_program','urutan',true),T('web_berita','tanggal',false,6),T('web_pengumuman','tanggal',false,6),T('web_galeri','created_at',false,60)]);
+      if(c.error)throw c.error;
+      const C=Object.fromEntries(c.data.map(r=>[r.k,r.v]));
+      document.querySelectorAll('[data-k]').forEach(e=>{if(C[e.dataset.k])e.textContent=C[e.dataset.k]});
+      document.querySelectorAll('[data-img]').forEach(e=>{if(C[e.dataset.img]){e.referrerPolicy='no-referrer';e.src=C[e.dataset.img]}});
+      if(C.misi)document.querySelector('[data-list=misi]').innerHTML=C.misi.split('\n').filter(x=>x.trim()).map(x=>`<li>${esc(x)}</li>`).join('');
+      if(C.spmb_jadwal)renderJadwal(C.spmb_jadwal);
+      if(C.maps_embed)document.querySelector('[data-maps]').src=C.maps_embed;
+      if(C.tahun_ajaran)document.title=document.title.replace(/\s*\|.*$/,'')+' | TA '+C.tahun_ajaran;
+      const col=['bg-blue-600','bg-brand-emerald','bg-amber-500'];
+      if(pr.data&&pr.data.length)document.getElementById('programGrid').innerHTML=pr.data.map((p,i)=>`<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1"><div class="w-16 h-16 rounded-2xl ${col[i%3]} text-white flex items-center justify-center text-2xl mb-6 shadow-md"><i class="fa-solid ${esc(p.ikon||'fa-star')}"></i></div><h3 class="font-heading font-bold text-2xl text-slate-900 mb-3">${esc(p.judul)}</h3><p class="text-slate-600 text-sm mb-6 leading-relaxed">${esc(p.deskripsi)}</p><div class="space-y-2 text-xs font-semibold text-slate-700">${(p.poin||'').split('\n').filter(x=>x.trim()).map(x=>`<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-emerald"></i> ${esc(x)}</div>`).join('')}</div></div>`).join('');
+      if(br.data&&br.data.length){NEWS=br.data;document.getElementById('newsGrid').innerHTML=NEWS.map((n,i)=>`<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200/80 flex flex-col">${n.gambar?`<img src="${esc(n.gambar)}" ${IMG} alt="" class="h-48 w-full object-cover">`:'<div class="h-48 bg-gradient-to-br from-brand-blue to-brand-emerald"></div>'}<div class="p-6 flex-1 flex flex-col"><div class="flex items-center gap-3 text-xs text-slate-500 mb-3"><span><i class="fa-regular fa-calendar mr-1"></i> ${tgl(n.tanggal)}</span><span>&bull;</span><span class="text-brand-blue font-semibold">${esc(n.kategori)}</span></div><h3 class="font-heading font-bold text-lg text-slate-900 mb-2">${esc(n.judul)}</h3><p class="text-slate-600 text-sm line-clamp-2 mb-4 flex-1">${esc(n.isi)}</p><button onclick="openNews(${i})" class="text-brand-blue font-semibold text-sm hover:underline text-left">Baca Selengkapnya &rarr;</button></div></div>`).join('')}
+      if(pg.data&&pg.data.length){ANN=pg.data;document.getElementById('annList').innerHTML=ANN.map((a,i)=>`<div class="p-4 rounded-xl bg-slate-50 hover:bg-slate-100 transition border border-slate-100"><span class="${BADGE[a.kategori]||BADGE.Umum} text-[10px] font-bold px-2 py-0.5 rounded uppercase">${esc(a.kategori||'Umum')}</span><span class="text-xs text-slate-400 ml-2">${tgl(a.tanggal)}</span><h4 class="font-semibold text-sm text-slate-800 mt-1 cursor-pointer hover:text-brand-blue" onclick="openAnn(${i})">${esc(a.judul)}</h4>${a.berkas_url?`<a href="${esc(a.berkas_url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs text-brand-blue font-medium mt-2 hover:underline"><i class="fa-solid fa-file-arrow-down"></i> ${esc(a.berkas_nama||'Unduh Lampiran')}</a>`:''}</div>`).join('')}
+      if(!window.DRIVE_OK&&gl.data&&gl.data.length)document.getElementById('galleryGrid').innerHTML=gl.data.map(g=>{const v=g.tipe==='video'&&g.video_url,vid=dId(g.video_url),th=g.gambar||(vid?`https://drive.google.com/thumbnail?id=${vid}&sz=w800`:''),
+        act=v?`openLightbox(${JSON.stringify(g.judul).replace(/"/g,'&quot;')},'${esc(g.video_url)}',true)`:`openLightbox(${JSON.stringify(g.judul).replace(/"/g,'&quot;')},'${esc(g.gambar)}')`;
+        return `<div class="gallery-item ${esc((g.kategori||'').toLowerCase())} group relative overflow-hidden rounded-2xl shadow-md h-64 cursor-pointer bg-slate-800" onclick="${act}">${th?`<img src="${esc(th)}" ${IMG} alt="${esc(g.judul)}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">`:''}${v?'<div class="absolute inset-0 flex items-center justify-center"><span class="w-14 h-14 rounded-full bg-black/60 text-white flex items-center justify-center text-xl"><i class="fa-solid fa-play"></i></span></div>':''}<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-6 flex flex-col justify-end text-white"><span class="text-xs text-brand-gold uppercase font-bold">${esc(g.kategori)}${v?' &bull; Video':''}</span><h4 class="font-heading font-bold text-lg">${esc(g.judul)}</h4></div></div>`}).join('');
+    }catch(err){console.warn('Supabase belum siap, memakai konten bawaan:',err.message)}})();
+    </script>
+</body>
+</html>
